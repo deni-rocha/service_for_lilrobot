@@ -1,0 +1,40 @@
+
+ /* CORPO DO SIDEBAR/NAVBAR */
+.header__lista {
+  margin-block-start: 0;
+  scroll-margin-block-end: 0;
+  padding: 0.5rem;
+  background: #D1D1D1;
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+}
+
+ /* OS ITENS DO NAVBAR  */
+ 
+.header__lista___item {
+  font-size: 0.7rem;
+  padding-right: 2rem;
+  
+}
+.header__lista___item:hover{
+  
+  transform: scale(1.2);
+}
+
+.header__lista:first-child{
+  padding-left: 2.5rem;
+}
+
+.header__lista___itemA {
+  color: black;
+  padding: .3rem;
+  opacity: .7;
+  transition: all .3s;
+}
+
+ .header__lista___itemA:hover{
+  opacity: 1;
+  
+}
+

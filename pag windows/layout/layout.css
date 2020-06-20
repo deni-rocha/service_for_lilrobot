@@ -1,0 +1,25 @@
+ /* LAYOUT USANDO GRID */
+ .corpo{
+  height: 100vh;
+  background: #002984;
+  box-shadow: inset 0 0 1em black;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-areas: "cabecalho" "corpo" "footer"  ;
+  grid-template-columns: auto;
+  grid-template-rows: 15% 70% 15%;
+}
+
+.header {
+  grid-area: cabecalho;
+}
+
+.main {
+  grid-area: corpo;
+
+}
+
+.footer {
+  grid-area: footer;
+}

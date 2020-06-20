@@ -1,0 +1,63 @@
+
+ /* JANELA - EDIT ABOUT (USANDO GRID) */
+
+.main__janela {
+  box-shadow: 30px 20px 2px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 650px;
+  display: grid;
+  grid-template-areas: "Texto1" "Texto2" "Texto3";
+  grid-template-columns: auto;
+  grid-template-rows: 20px 100px 66px;
+}
+
+ /* OS ITENS DA JANELA */
+
+.main__janela__item1 {
+  background: #FCFFF5;
+  grid-area: Texto1;
+  
+}
+
+.main__janela__item2 {
+  background: #9EA8A9;
+  grid-area: Texto2;
+  line-height: 2;
+  padding: 1rem 0 0.1rem 0;
+  
+}
+
+.main__janela__item3 {
+  background: #9EA8A9;
+  grid-area: Texto3;
+  padding: 1.5rem 0 0.1rem 0;
+}
+
+.main__janela__item1 p {
+  margin-block-start: 0.3rem;
+  margin-block-end: 0;
+}
+
+  /* BOTÃO OK */
+
+.main__janela__item3 button {
+  padding: 0.2rem 0 0 0;
+  width: 100px;
+  box-shadow: 6px 8px 1px black;
+  opacity: .9;
+  transition: transform .3s;
+}
+
+.main__janela__item3 button:hover{
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.main__janela.active {
+  visibility: hidden;
+}
